@@ -1,0 +1,26 @@
+.section {
+  padding-top: 115px;
+  padding-bottom: 115px;
+  background-color: #fff;
+
+  @media (max-width: $md) {
+    padding: 50px 0;
+  }
+
+  &--tone {
+    background-color: #f6f4f9;
+  }
+
+  &__header {
+    margin-bottom: 44px;
+    text-align: center;
+
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+
+    & > *:not(:last-child) {
+      margin-bottom: 14px;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+
+.form-group {
+  &__label {
+    display: block;
+    margin-bottom: 4px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: $ff-secondary;
+    color: #807d8d;
+    font-style: normal;
+
+    opacity: 0;
+
+    transition: opacity .3s;
+
+    &--active {
+      opacity: 1;
+    }
+  }
+
+  &__control {
+    width: 100%;
+    padding: 15px 20px;
+
+    font-weight: 300;
+    font-size: $fz-main;
+    line-height: 19px;
+    font-family: $ff-secondary;
+    color: #fff;
+    font-style: normal;
+
+    background: rgba(7, 11, 47, .07);
+    border: 2px solid #473e69;
+    border-radius: 4px;
+    outline: none;
+
+    &::placeholder {
+      font-weight: 300;
+      font-size: $fz-main;
+      line-height: 19px;
+      font-family: $ff-secondary;
+      color: $c-accent;
+      font-style: normal;
+    }
+
+    &:focus {
+      border-color: $c-accent;
+    }
+
+    &--textarea {
+      resize: none;
+    }
+  }
+}

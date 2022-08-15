@@ -1,0 +1,47 @@
+.title {
+  margin-bottom: 0;
+
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 70px;
+  font-family: $ff-main;
+  color: #fff;
+  font-style: normal;
+
+  @media (max-width: $md) {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+}
+
+.title-2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1;
+  font-family: $ff-main;
+  color: $c-main;
+  font-style: normal;
+
+  @media (max-width: $md) {
+    font-size: 32px;
+  }
+}
+
+.title-3 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 24px;
+  font-family: $ff-main;
+  color: $c-main;
+  font-style: normal;
+}
+
+.sub-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: $ff-secondary;
+  color: $c-accent;
+  font-style: normal;
+  letter-spacing: .02em;
+}

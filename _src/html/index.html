@@ -1,0 +1,257 @@
+@@include('block/head.html')
+@@include('block/header/header.html')
+
+<main class="main">
+  <!-- ////////////////////////////////////////////////////////// banner -->
+  <section class="banner">
+    <div class="banner__container container">
+      <p class="banner__sub-title sub-title">
+        Верстка. Программирование. Дизайн.
+      </p>
+      <h1 class="banner__title title">
+        Техническая поддержка сайтов и корпоративных порталов
+      </h1>
+
+      <a href="#form" class="banner__btn btn btn--gradient">
+        <span class="btn__caption">Отправить сайт на оценку</span>
+      </a>
+
+      <div class="banner__footer banner-footer">
+        <span class="banner-footer__caption">Партнеры:</span>
+        <img
+          class="banner-footer__logo"
+          src="static/img/icon/bitrix24.svg"
+          alt="Logo-bitrix"
+        />
+        <img
+          class="banner-footer__logo"
+          src="static/img/icon/bitrix1c.svg"
+          alt="Logo-bitrix-2"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- ////////////////////////////////////////////////////////// about -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about__left col">
+          <div class="about__desc">
+            <h2 class="about__title title-2">О нас</h2>
+            <p class="about__text about__text--large">
+              Техподдержка от бесперебойного аутсорс-продакшна
+            </p>
+            <p class="about__text">
+              Являясь партнером более 30 агентств, которые доверили нам 100+
+              проектов и могут подтвердить качество работы, мы сформировали
+              новую услугу, использовав весь опыт, накопленный в первом юните.
+            </p>
+            <p class="about__text">
+              Manao.Support — это концентрация системной работы, четких
+              процессов и регламентов, позволяющих минимизировать ситуации,
+              когда исполнители о чем-то забыли, не завершили часть задачи или
+              просто некорректно ее поняли.
+            </p>
+          </div>
+          <div class="about-images row">
+            <div class="about-images__item about-box-img col">
+              <img src="static/img/about/img_1.jpg" alt="About-img-1" />
+            </div>
+            <div class="about-images__item about-box-img col">
+              <img src="static/img/about/img_2.jpg" alt="About-img-2" />
+            </div>
+            <div class="about-images__item about-box-img col d-none d-lg-block">
+              <img src="static/img/about/img_3.jpg" alt="About-img-3" />
+            </div>
+          </div>
+        </div>
+        <div class="about__right about-box-img col d-lg-none d-sm-block">
+          <img src="static/img/about/img_3.jpg" alt="About-img-3" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ////////////////////////////////////////////////////////// services -->
+  <section class="services section section--tone" id="services">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="title-2">Услуги</h2>
+        <p class="sub-title">
+          Возьмем на себя комплексную поддержку сайта/портала
+        </p>
+      </div>
+      <div class="services__inner">
+        <ul class="services__list list-reset row">
+          <li class="services__block col">
+            <div class="services__icon">
+              <img src="static/img/services/icon_1.svg" alt="Services_icon_1" />
+            </div>
+            <p class="services__name">Оптимизировать<br> верстку</p>
+          </li>
+          <li class="services__block col">
+            <div class="services__icon">
+              <img src="static/img/services/icon_2.svg" alt="Services_icon_2" />
+            </div>
+            <p class="services__name">Создать<br> страницы</p>
+          </li>
+          <li class="services__block col">
+            <div class="services__icon">
+              <img src="static/img/services/icon_3.svg" alt="Services_icon_3" />
+            </div>
+            <p class="services__name">Адаптировать<br> содержание</p>
+          </li>
+          <li class="services__block col">
+            <div class="services__icon">
+              <img src="static/img/services/icon_4.svg" alt="Services_icon_4" />
+            </div>
+            <p class="services__name">Настроить<br> интеграцию</p>
+          </li>
+          <li class="services__block col">
+            <div class="services__icon">
+              <img src="static/img/services/icon_5.svg" alt="Services_icon_5" />
+            </div>
+            <p class="services__name">Модернизировать<br> сайт</p>
+          </li>
+          <li class="services__block col">
+            <div class="services__icon">
+              <img src="static/img/services/icon_6.svg" alt="Services_icon_6" />
+            </div>
+            <p class="services__name">Исправить<br> ошибки</p>
+          </li>
+          <li class="services__block col">
+            <div class="services__icon">
+              <img src="static/img/services/icon_7.svg" alt="Services_icon_7" />
+            </div>
+            <p class="services__name">Разработать<br> функционал</p>
+          </li>
+          <li class="services__block col">
+            <div class="services__icon">
+              <img src="static/img/services/icon_8.svg" alt="Services_icon_8" />
+            </div>
+            <p class="services__name">Обновить <br>систему</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ////////////////////////////////////////////////////////// blog -->
+  <section class="blog section" id="blog">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="title-2">Публикации</h2>
+        <p class="sub-title">Делимся своим опытом и экспертизой</p>
+      </div>
+
+      <div class="blog__slider blog-slider">
+        <div class="blog-slider__slider swiper">
+          <div class="blog-slider__wrapper swiper-wrapper">
+            <div class="blog-slider__slide swiper-slide">
+              <a href="#" class="blog-slider__card blog-card">
+                <div class="blog-card__wrap-img">
+                  <img
+                    class="blog-card__img"
+                    src="static/img/slider/img_1.jpg"
+                    alt="Slide_img_1"
+                  />
+                </div>
+                <div class="blog-card__desc">
+                  <h3 class="blog-card__title title-3">
+                    Как мы подбираем людей для аутсорс-продакшна
+                  </h3>
+                  <p class="blog-card__text">
+                    Реализация дополнительного поля для элементов, которое
+                    генерируется по определенным правилам (как SEO поля).
+                  </p>
+                  <div class="blog-card__footer">
+                    <img
+                      src="static/img/icon/manao_logo.svg"
+                      alt="Manao_logo"
+                    />
+                    <span class="blog-card__date">12 мая 2021</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="blog-slider__slide swiper-slide">
+              <a href="#" class="blog__card blog-card">
+                <div class="blog-card__wrap-img">
+                  <img
+                    class="blog-card__img"
+                    src="static/img/slider/img_2.jpg"
+                    alt="Slide_img_2"
+                  />
+                </div>
+                <div class="blog-card__desc">
+                  <h3 class="blog-card__title title-3">
+                    Как мы подбираем людей для аутсорс-продакшна
+                  </h3>
+                  <p class="blog-card__text">
+                    Реализация дополнительного поля для элементов, которое
+                    генерируется по определенным правилам (как SEO поля).
+                  </p>
+                  <div class="blog-card__footer">
+                    <img
+                      src="static/img/icon/manao_logo.svg"
+                      alt="Manao_logo"
+                    />
+                    <span class="blog-card__date">12 мая 2021</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="blog-slider__slide swiper-slide">
+              <a href="#" class="blog__card blog-card">
+                <div class="blog-card__wrap-img">
+                  <img
+                    class="blog-card__img"
+                    src="static/img/slider/img_3.jpg"
+                    alt="Slide_img_3"
+                  />
+                </div>
+                <div class="blog-card__desc">
+                  <h3 class="blog-card__title title-3">
+                    Как мы подбираем людей
+                  </h3>
+                  <p class="blog-card__text">
+                    Реализация дополнительного поля для элементов, которое
+                    генерируется по определенным правилам (как SEO поля).
+                  </p>
+                  <div class="blog-card__footer">
+                    <img
+                      src="static/img/icon/cossa_logo.svg"
+                      alt="Cossa_logo"
+                    />
+                    <span class="blog-card__date">12 мая 2021</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog-slider__btn-prev">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#arrow"></use>
+          </svg>
+        </div>
+        <div class="blog-slider__btn-next">
+          <svg aria-hidden="true">
+            <use xlink:href="static/img/symbol/sprite.svg#arrow"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+@@include('block/footer/footer.html')
+
+@@include('block/modals/modal.html')
+
+
+@@include('block/scripts.html')

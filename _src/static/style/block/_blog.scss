@@ -1,0 +1,165 @@
+.blog-slider {
+  position: relative;
+
+  &__btn-prev,
+  &__btn-next {
+    position: absolute;
+    top: 44%;
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 49px;
+    height: 49px;
+
+    background-color: #fff;
+    border-radius: 50em;
+    cursor: pointer;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, .1));
+
+    pointer-events: visible;
+
+    @media (max-width: $sm) {
+      display: none;
+    }
+
+    &:hover svg {
+      stroke: #791281;
+    }
+
+    &:active svg {
+      stroke: #791281;
+    }
+
+    svg {
+      width: 17px;
+      height: 17px;
+
+      transition: .3s;
+
+      stroke: #d3d0d6;
+    }
+  }
+
+  &__btn-prev {
+    left: -25px;
+
+    transform: rotate(-180deg);
+  }
+
+  &__btn-next {
+    right: -25px;
+  }
+
+  &__slider {
+    @media (max-width: $sm) {
+      margin: 0 -15px;
+    }
+  }
+
+  &__wrapper {
+    @media (max-width: $sm) {
+      padding: 0 15px;
+    }
+  }
+
+  &__slide {
+    @media (max-width: $sm) {
+      width: 280px;
+    }
+  }
+}
+
+.blog-card {
+  $self: &;
+
+  text-decoration: none;
+
+  border-radius: $radius;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &__wrap-img {
+    margin: 0 auto;
+    overflow: hidden;
+
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+  }
+
+  &__img {
+    transition: transform .6s;
+
+    #{$self}:hover & {
+      transform: scale(1.1);
+    }
+  }
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    min-height: 255px;
+    padding: 30px 15px;
+
+    background-color: #f6f4f9;
+    border-radius: 0 0 9px 9px;
+
+    @media (max-width: $xl) {
+      min-height: 279px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    flex-grow: 1;
+    margin-bottom: 18px;
+    padding-bottom: 26px;
+
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: $ff-secondary;
+    color: $c-secondary;
+    font-style: normal;
+
+    border-bottom: 2px solid #eae8ec;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__date {
+    position: relative;
+
+    padding-left: 23px;
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: $ff-main;
+    color: #c4c4c4;
+    font-style: normal;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: block;
+      width: 16px;
+      height: 16px;
+
+      background: url("../img/icon/calendar.svg") no-repeat;
+      background-size: 100%;
+    }
+  }
+}

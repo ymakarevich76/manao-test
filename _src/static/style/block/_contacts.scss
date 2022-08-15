@@ -1,0 +1,154 @@
+.contacts {
+  &__wrap {
+    padding-bottom: 87px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+
+    @media (max-width: $md) {
+      padding-bottom: 40px;
+    }
+
+    &-left {
+      width: $c-5;
+
+      @media (max-width: $lg) {
+        width: $c-12;
+        margin-bottom: 30px;
+      }
+    }
+
+    &-right {
+      width: $c-7;
+
+      @media (max-width: $lg) {
+        width: $c-12;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 15px;
+
+    color: #fff;
+
+    @media (max-width: $lg) {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    margin-bottom: 86px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: $ff-secondary;
+    color: $c-accent;
+    font-style: normal;
+
+    @media (max-width: $lg) {
+      margin-bottom: 40px;
+
+      text-align: center;
+    }
+  }
+
+  &__content {
+    margin-left: 30px;
+  }
+}
+
+.contacts__inner {
+  display: flex;
+}
+
+.contacts-social {
+  display: flex;
+  justify-content: center;
+
+  transform: rotate(180deg);
+
+  writing-mode: vertical-rl;
+
+  &__link {
+    position: relative;
+
+    padding-bottom: 13px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: $ff-main;
+    color: #fff;
+    text-decoration: none;
+    font-style: normal;
+
+    transition: .3s;
+
+    &:hover {
+      color: $c-accent;
+      text-decoration: none;
+    }
+
+    &:not(:first-child) {
+      padding-top: 13px;
+    }
+
+    &:not(:first-child)::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+
+      display: block;
+      width: 3px;
+      height: 3px;
+
+      background-color: #fff;
+      border-radius: 50em;
+      transform: translate(-50%, 0);
+    }
+  }
+}
+
+.contacts-content {
+  &__info {
+    &:not(:last-child) {
+      margin-bottom: 22px;
+    }
+  }
+
+  &__label {
+    margin-bottom: 10px;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    font-family: $ff-secondary;
+    color: $c-accent;
+    font-style: normal;
+  }
+
+  &__descr {
+    margin-bottom: 0;
+
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+    font-family: $ff-main;
+    color: #fff;
+    font-style: normal;
+
+    &--link {
+      color: #fff;
+      text-decoration: none;
+
+      transition: .3s;
+
+      &:hover {
+        color: $c-accent;
+        text-decoration: none;
+      }
+    }
+  }
+}

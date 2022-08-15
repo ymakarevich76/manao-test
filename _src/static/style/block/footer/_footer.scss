@@ -1,0 +1,89 @@
+.footer {
+  padding-top: 115px;
+
+  background: #0b0b35 url("../img/bc/footer-bc.png") no-repeat;
+  background-size: cover;
+
+  @media (max-width: $md) {
+    padding-top: 50px;
+
+    background-position: 0 -120px;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+
+    &-politics {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 17px;
+      font-family: $ff-main;
+      color: $c-accent;
+      text-decoration: none;
+      font-style: normal;
+
+      transition: .3s;
+
+      &:hover {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+
+    &-center {
+      @media (max-width: $md) {
+        margin-top: 10px;
+      }
+    }
+
+    &-right {
+      @media (max-width: $xl) {
+        margin-top: 10px;
+      }
+    }
+
+    &-copy {
+      margin-bottom: 0;
+
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 20px;
+      font-family: $ff-main;
+      color: $c-accent;
+      font-style: normal;
+    }
+  }
+}
+
+.footer-pay {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -8px;
+
+  &__link {
+    $self: &;
+
+    width: 37px;
+    height: 24px;
+    margin: 8px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+
+      transition: fill .3s;
+
+      fill: #545472;
+    }
+
+    &:hover {
+      svg {
+        fill: #fff;
+      }
+    }
+  }
+}

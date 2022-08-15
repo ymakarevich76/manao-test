@@ -1,0 +1,125 @@
+
+.form {
+  &__group {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__checkbox-wrap {
+    margin-bottom: 38px;
+  }
+
+  &__checkbox-box {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__checkbox {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    z-index: 3;
+
+    width: 17px;
+    height: 17px;
+
+    cursor: pointer;
+    opacity: 0;
+
+    &:checked ~ label:after {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  &__checkbox-label {
+    position: relative;
+    top: 2px;
+
+    margin-bottom: 0;
+    padding-left: 36px;
+
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+    font-family: $ff-secondary;
+    color: #fff;
+    font-style: normal;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: block;
+      width: 22px;
+      height: 22px;
+
+      border: 2px solid #473e69;
+      border-radius: 4px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 22px;
+      height: 22px;
+
+      background: url("../img/icon/check.svg") no-repeat 50% 50%;
+      visibility: hidden;
+      opacity: 0;
+    }
+  }
+
+  &__wrap-agree-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $sm) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__agree {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    font-family: $ff-secondary;
+    color: $c-accent;
+    font-style: normal;
+
+    @media (max-width: $sm) {
+      margin-bottom: 20px;
+    }
+
+    &--link {
+      text-decoration: none;
+
+      border-bottom: 1px solid $c-accent;
+
+      transition: .3s;
+
+      &:hover {
+        color: #fff;
+        text-decoration: none;
+
+        border-color: #fff;
+      }
+    }
+  }
+
+  &__btn {
+    width: 226px;
+    flex-shrink: 0;
+  }
+}

@@ -1,0 +1,86 @@
+.btn {
+  $self: &;
+  position: relative;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px 30px 18px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  font-family: $ff-main;
+  color: #fff;
+  text-transform: uppercase;
+  font-style: normal;
+  letter-spacing: .1em;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 50em;
+
+  transition: .3s;
+
+  @media (max-width: $md) {
+    font-size: 14;
+    padding: 17px 20px 15px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: inherit;
+  }
+
+  &::before {
+    z-index: 1;
+
+    background: linear-gradient(105.96deg, #3f0f72 13.07%, #791281 85.2%);
+    transition: opacity .3s;
+  }
+
+  &::after {
+    border: 2px solid transparent;
+    background: linear-gradient(45deg, #3f0f72, #791281) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    opacity: 0;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+    background-clip: padding-box; /* !importanté */
+
+    &::before {
+      opacity: 0;
+    }
+
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &--light {
+    border: 1px solid red;
+      &::after,
+      &::before {
+        display: none;
+      }
+  }
+
+  &__caption {
+    position: relative;
+    z-index: 3;
+  }
+}
